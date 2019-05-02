@@ -1,23 +1,23 @@
 // Mixins in here
 .button(@radius, @color) {
-    width: 83%;
-    color: whitesmoke;
-    text-align: center;
-    border-radius: @radius;
-    background-color: @color;
-    height: 44px;
-    padding-top: 13px;
-    font-size: 1.8em;
-    margin-top: 1px;
+  width: 83%;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: @radius;
+  background-color: @color;
+  height: 44px;
+  padding-top: 13px;
+  font-size: 1.8em;
+  margin-top: 1px;
 }
-.hover-animation() {
-    @keyframes border-animation {
-        0% {
-          border: .1px solid black;
-        }
-        100% {
-          border: 2px solid black;
-        }
-      }
-    animation: border-animation 1s infinite;
+.hover-animation(@duration) {
+  @keyframes border-animation {
+    0% {
+      border: 0.1px solid black;
+    }
+    100% {
+      border: 2px solid black;
+    }
+  }
+  animation: border-animation @duration infinite;
 }
