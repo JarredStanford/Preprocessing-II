@@ -10,3 +10,14 @@
     font-size: 1.8em;
     margin-top: 1px;
 }
+.hover-animation() {
+    @keyframes border-animation {
+        0% {
+          border: .1px solid black;
+        }
+        100% {
+          border: 2px solid black;
+        }
+      }
+    animation: border-animation 1s infinite;
+}
